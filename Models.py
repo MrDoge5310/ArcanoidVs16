@@ -20,3 +20,14 @@ class Ork(Sprite):
 class Ball(Sprite):
     def __init__(self, x, y):
         super().__init__(x, y, "cannonball.png")
+
+
+class Platform:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.color = 'white'
+        self.rect = pygame.Rect(self.x - 100, self.y - 75, 200, 25)
+
+    def draw(self, scr):
+        pygame.draw.rect(scr, self.color, self.rect, 0, 5)

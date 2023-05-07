@@ -3,12 +3,18 @@ import sys
 import Models
 pygame.init()
 
-scr = pygame.display.set_mode((800, 600))
+width = 800
+height = 600
+scr = pygame.display.set_mode((width, height))
 clock = pygame.time.Clock()
 GameOver = False
 
 ork = Models.Ork(0, 0)
 ork.draw(scr)
+
+platform = Models.Platform(width / 2, height)
+platform.draw(scr)
+
 while not GameOver:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
