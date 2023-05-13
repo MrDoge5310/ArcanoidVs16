@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c69c2d0-9580-44c4-8c5d-d64c2e018473" name="Changes" comment="платформа двигается">
+    <list default="true" id="3c69c2d0-9580-44c4-8c5d-d64c2e018473" name="Changes" comment="мячк летает">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -154,7 +155,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683987082374</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="мячк летает">
+      <created>1683987711805</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683987711805</updated>
+    </task>
+    <task id="LOCAL-00012" summary="мячк летает">
+      <created>1683988322643</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683988322643</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +188,7 @@
     <MESSAGE value="Добавлена платформа" />
     <MESSAGE value="Добавлены орки" />
     <MESSAGE value="платформа двигается" />
-    <option name="LAST_COMMIT_MESSAGE" value="платформа двигается" />
+    <MESSAGE value="мячк летает" />
+    <option name="LAST_COMMIT_MESSAGE" value="мячк летает" />
   </component>
 </project>

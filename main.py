@@ -1,6 +1,7 @@
 import pygame
 import sys
 import Models
+from tkinter import messagebox
 pygame.init()
 
 width = 800
@@ -8,6 +9,7 @@ height = 600
 scr = pygame.display.set_mode((width, height))
 clock = pygame.time.Clock()
 GameOver = False
+score = 0
 
 orks = []
 i = 0
@@ -31,11 +33,17 @@ while not GameOver:
                 platform.move_left()
 
     ball.move()
-    ball.check_colision()
+    GameOver = ball.check_colision(platform)
     for ork in orks:
-        ork.draw(scr)
+        if ball.collide_enemy(ork):
+            orks.remove(ork)
+            score += 1
+        else:
+            ork.draw(scr)
 
     platform.draw(scr)
     ball.draw(scr)
     pygame.display.update()
     clock.tick(40)
+messagebox.showinfo('GameOver', f"GameOver!\nYour Score is: {score}")
+sys.exit("GameOver")
