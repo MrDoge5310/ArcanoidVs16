@@ -31,3 +31,9 @@ class Platform:
 
     def draw(self, scr):
         pygame.draw.rect(scr, self.color, self.rect, 0, 5)
+
+    def move_left(self):
+        self.x -= 5
+
+    def move_right(self):
+        self.x += 5
