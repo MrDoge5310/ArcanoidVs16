@@ -20,14 +20,20 @@ class Ork(Sprite):
 class Ball(Sprite):
     def __init__(self, x, y):
         super().__init__(x, y, "cannonball.png")
-        self.dx = 3
+        self.dx = -3
         self.dy = -3
 
     def move(self):
         self.rect.x += self.dx
         self.rect.y += self.dy
 
-
+    def check_colision(self):
+        if self.rect.x + 20 == 800 and self.rect.y in range(0, 600 - 20):
+            self.dx *= -1
+        elif self.rect.x == 0 and self.rect.y in range(0, 600 - 20):
+            self.dx *= -1
+        elif self.rect.x in range(0, 800 - 20) and self.rect.y == 0:
+            self.dy *= -1
 class Platform:
     def __init__(self, x, y):
         self.x = x

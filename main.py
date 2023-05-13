@@ -31,7 +31,7 @@ while not GameOver:
                 platform.move_left()
 
     ball.move()
-
+    ball.check_colision()
     for ork in orks:
         ork.draw(scr)
 
