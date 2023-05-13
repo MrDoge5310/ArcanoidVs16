@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c69c2d0-9580-44c4-8c5d-d64c2e018473" name="Changes" comment="Добавлены орки">
+    <list default="true" id="3c69c2d0-9580-44c4-8c5d-d64c2e018473" name="Changes" comment="платформа двигается">
       <change beforePath="$PROJECT_DIR$/Models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -147,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683984847403</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="платформа двигается">
+      <created>1683987082374</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683987082374</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +172,7 @@
     <MESSAGE value="Добавлен класс Ареа" />
     <MESSAGE value="Добавлена платформа" />
     <MESSAGE value="Добавлены орки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены орки" />
+    <MESSAGE value="платформа двигается" />
+    <option name="LAST_COMMIT_MESSAGE" value="платформа двигается" />
   </component>
 </project>

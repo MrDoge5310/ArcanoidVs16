@@ -17,6 +17,7 @@ for y in range(0, height // 2, 20):
 
 
 platform = Models.Platform(width / 2, height)
+ball = Models.Ball(width // 2 - 10, height - 95)
 
 while not GameOver:
     scr.fill('black')
@@ -29,9 +30,12 @@ while not GameOver:
             if event.key == pygame.K_LEFT:
                 platform.move_left()
 
+    ball.move()
+
     for ork in orks:
         ork.draw(scr)
 
     platform.draw(scr)
+    ball.draw(scr)
     pygame.display.update()
     clock.tick(40)

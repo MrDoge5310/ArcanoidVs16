@@ -20,6 +20,12 @@ class Ork(Sprite):
 class Ball(Sprite):
     def __init__(self, x, y):
         super().__init__(x, y, "cannonball.png")
+        self.dx = 3
+        self.dy = -3
+
+    def move(self):
+        self.rect.x += self.dx
+        self.rect.y += self.dy
 
 
 class Platform:
